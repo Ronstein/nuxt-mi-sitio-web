@@ -1,0 +1,38 @@
+{
+  "name": "02-mi-sitio",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "seed": "ts-node seed/seed-database.ts"
+  },
+  "dependencies": {
+    "@nuxt/eslint": "^1.13.0",
+    "@nuxt/fonts": "^0.13.0",
+    "@nuxt/icon": "^2.2.1",
+    "@nuxt/image": "^2.0.0",
+    "@nuxt/ui": "^4.4.0",
+    "@prisma/client": "^6.19.2",
+    "@prisma/nuxt": "^0.3.0",
+    "bcryptjs": "^3.0.3",
+    "cloudinary": "^2.10.0",
+    "eslint": "^9.39.2",
+    "nuxt": "^4.3.0",
+    "nuxt-auth-utils": "^0.5.28",
+    "tailwindcss": "^4.1.18",
+    "uuid": "^14.0.0",
+    "vue": "^3.5.27",
+    "vue-router": "^4.6.4",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.2",
+    "dotenv": "^17.2.4",
+    "prisma": "^6.19.2",
+    "ts-node": "^10.9.2"
+  }
+}
