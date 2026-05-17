@@ -13,6 +13,11 @@ useSeoMeta({
   ogTitle: () => product.value?.name || "Product",
   ogDescription: () => product.value?.description || "Product",
   ogImage: () => product.value?.images?.[0] || "",
+  //adicionales
+  twitterCard: "summary_large_image",
+  twitterTitle: () => product.value?.name || "Producto",
+  twitterDescription: () => product.value?.description || "",
+  twitterImage: () => product.value?.images?.[0] || "",
   // twitterTitle: () => product.value?.name || 'Producto',
 });
 
