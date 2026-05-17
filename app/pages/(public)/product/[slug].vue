@@ -7,6 +7,15 @@ const { product } = await useProduct(slug);
 //   `/api/product/${slug}/suggestions`,
 // );
 
+useSeoMeta({
+  title: () => product.value?.name || "Producto",
+  description: () => product.value?.description || "",
+  ogTitle: () => product.value?.name || "Product",
+  ogDescription: () => product.value?.description || "Product",
+  ogImage: () => product.value?.images?.[0] || "",
+  // twitterTitle: () => product.value?.name || 'Producto',
+});
+
 // Si no se encuentra el producto, mostrar error 404
 if (!product.value) {
   navigateTo("/404");
